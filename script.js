@@ -1,4 +1,5 @@
 // Selecting necessary DOM elements
+
 const captchaTextBox = document.querySelector(".captch_box input"); // Input field where the generated captcha will be displayed
 const refreshButton = document.querySelector(".refresh_button"); // Button to refresh the captcha
 const captchaInputBox = document.querySelector(".captch_input input"); // Input field for the user to enter the captcha
