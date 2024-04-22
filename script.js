@@ -7,9 +7,11 @@ const message = document.querySelector(".message"); // Element to display the va
 const submitButton = document.querySelector(".button"); // Submit button to validate the entered captcha
 
 // Variable to store the generated captcha
+
 let captchaText = null;
 
 // Function to generate the captcha
+
 const generateCaptcha = () => {
   const randomString = Math.random().toString(36).substring(2, 7); // Generate a random string
   const randomStringArray = randomString.split("");
@@ -22,12 +24,14 @@ const generateCaptcha = () => {
 };
 
 const refreshBtnClick = () => {
+  
   generateCaptcha(); // Refresh the captcha when the refresh button is clicked
   captchaInputBox.value = ""; // Clear the user input field
   captchaKeyUpValidate();
 };
 
 const captchaKeyUpValidate = () => {
+  
   // Toggle the "disabled" class on the submit button based on whether the captcha input field is empty or not
   submitButton.classList.toggle("disabled", !captchaInputBox.value);
 
